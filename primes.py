@@ -1,14 +1,6 @@
-"""List of prime numbers generator."""
-"""ENTER YOUR SOLUTION HERE!"""
-
-
-
-inputNum = int(raw_input('How many primes to print?  '))
-count = 0
 potentialprime = 2
-primesList = []
 
-
+# check if a number is prime
 def primetest(potentialprime):
     divisor = 2
     
@@ -23,14 +15,17 @@ def primetest(potentialprime):
             else:
                 return True
             
-# generate prime numbers until count reaches the user input number            
-while count < inputNum:
-    if primetest(potentialprime) == True:
-        # add the prime number to the list
-        primesList.append(potentialprime)
-        count += 1
-    potentialprime += 1
+def primes(number_of_primes):
+    count = 0
+    primesList = []
     
-print(primesList)
+    # generate prime numbers until count reaches the user input number            
+    while count < inputNum:
+        if primetest(potentialprime) == True:
+            # add the prime number to the list
+            primesList.append(potentialprime)
+            count += 1
+        potentialprime += 1
+    return primesList
 
 
