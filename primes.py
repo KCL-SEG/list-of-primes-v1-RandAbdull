@@ -4,7 +4,7 @@ potentialprime = 2
 def primetest(potentialprime):
     divisor = 2
     
-    while divisor <= potentialprime:
+    while divisor <= potentialprime:pytho
         if potentialprime == 2:
             return True
         elif potentialprime % divisor == 0:
@@ -28,4 +28,5 @@ def primes(number_of_primes):
         potentialprime += 1
     return primesList
 
-
+#print(primes(10))
+print('hi')
